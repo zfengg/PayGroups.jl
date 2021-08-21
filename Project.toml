@@ -1,0 +1,13 @@
+name = "PayGroups"
+uuid = "922b5244-06a6-4050-8ee4-e6bf4d9814f2"
+authors = ["Zhou FENG <42152221+zfengg@users.noreply.github.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
