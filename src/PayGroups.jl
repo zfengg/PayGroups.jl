@@ -530,7 +530,7 @@ print_soln(x::PayGroup) = print_soln(gen_soln(x))
 
 
 """
-    Interactively run Groupay.
+    Interactively manage struct `PayGroup`.
 """
 function igroupay()
     run(`clear`)

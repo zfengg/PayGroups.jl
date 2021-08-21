@@ -3,6 +3,9 @@ uuid = "922b5244-06a6-4050-8ee4-e6bf4d9814f2"
 authors = ["Zhou FENG <42152221+zfengg@users.noreply.github.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+
 [compat]
 julia = "1"
 
