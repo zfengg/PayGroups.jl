@@ -568,14 +568,14 @@ function igroupay()
     end
     # manual
     manual = (
-    ("g", "show meta-info of your group"),
-    ("s", "show payment solution"),
-    ("b", "show all bills"),
-    ("b foo", "show bill with name \e[33mfoo\e[0m"),
-    ("m", "show bills of all members"),
-    ("m bar", "show bills of member \e[36mbar\e[0m"),
-    ("am", "add members to your group"),
-    ("ab", "add bills to your group"),
+        ("g", "show meta-info of your group"),
+        ("s", "show payment solution"),
+        ("b", "show all bills"),
+        ("b foo", "show bill with name \e[33mfoo\e[0m"),
+        ("m", "show bills of all members"),
+        ("m bar", "show bills of member \e[36mbar\e[0m"),
+        ("am", "add members to your group"),
+        ("ab", "add bills to your group"),
     )
 
     function print_man_element(cmd)
@@ -603,29 +603,29 @@ function igroupay()
         if headCmd == "q"
             return true
         elseif headCmd == "h"
-        print_manual()
-    elseif headCmd == "g"
-        print_metainfo(g)
-    elseif headCmd == "s"
-        print_soln(g)
-    elseif headCmd == "b"
-        if lenCmd >= 2
-            print_bill(g, nextCmd[2])
+            print_manual()
+        elseif headCmd == "g"
+            print_metainfo(g)
+        elseif headCmd == "s"
+            print_soln(g)
+        elseif headCmd == "b"
+            if lenCmd >= 2
+                print_bill(g, nextCmd[2])
+            else
+                print_bill(g)
+            end
+        elseif headCmd == "m"
+            if lenCmd >= 2
+                print_member(g, nextCmd[2])
+            else
+                print_member(g)
+            end
+        elseif headCmd == "am"
+            add_member!(g)
+        elseif headCmd == "ab"
+            add_bills!(g)
         else
-            print_bill(g)
-        end
-    elseif headCmd == "m"
-        if lenCmd >= 2
-            print_member(g, nextCmd[2])
-        else
-            print_member(g)
-        end
-    elseif headCmd == "am"
-        add_member!(g)
-    elseif headCmd == "ab"
-        add_bills!(g)
-    else
-        print_invalidcmd()
+            print_invalidcmd()
         end
         return false
     end
