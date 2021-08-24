@@ -5,7 +5,7 @@
 
 A simple interactive solution to group payment.
 
-Why this script?
+Why this package?
 
 It solves the frequent but annoying payment issues in our life, especially after a trip with friends favoring a (partial) AA payment plan.
 
@@ -13,19 +13,23 @@ It solves the frequent but annoying payment issues in our life, especially after
 
 > Try it out @ [Repl.it](https://replit.com/@zfengg/groupay). It's fun!
 
-## Usage
-### Online by [Repl.it](https://replit.com/@zfengg/groupay)
-
-https://user-images.githubusercontent.com/42152221/127734458-e71469d5-460f-4622-a779-f35235a76e64.mov
+## Install
 
 ### Locally with [Julia](https://julialang.org/downloads/)
 
 Clone this repo or download [groupay.jl](groupay.jl)
 
-```bash
-git clone https://github.com/zfengg/groupay.git
-cd groupay
-julia groupay.jl
+```julia
+julia> ] add PayGroups
+```
+After installation, the easiest way to use `PayGroups`:
+```julia
+julia> using PayGroups
+julia> igroupay() # interactive
+# or
+julia> g = igroupay() # return a PayGroup as g
 ```
 
-The local usage provides `save_paygrp()` and `load_paygrp()` to save and load `PayGroup`.
+### Online by [Repl.it](https://replit.com/@zfengg/groupay)
+
+https://user-images.githubusercontent.com/42152221/127734458-e71469d5-460f-4622-a779-f35235a76e64.mov
