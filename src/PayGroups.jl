@@ -413,6 +413,7 @@ function gen_paygrp()
     while true
         membersTmp = readline()
         append!(members, split(membersTmp))
+        unique!(members)
         println()
         println("Your group now contains ", colorstring("$(length(members))", :tip), " members:")
         for x in members
