@@ -29,7 +29,7 @@ julia> igroupay() # interactive & return a PayGroup
 
 https://user-images.githubusercontent.com/42152221/127734458-e71469d5-460f-4622-a779-f35235a76e64.mov
 
-## Compile
+## [Compile](https://github.com/zfengg/PayGroups.jl/tree/compile)
 Ready to compile with [PackageCompiler.jl](https://github.com/JuliaLang/PackageCompiler.jl) by switching to branch [complie](https://github.com/zfengg/PayGroups.jl/tree/compile) and run:
 ```bash
 julia compile.jl # excutable @ compiled/bin/PayGroups
