@@ -1,0 +1,2 @@
+language = "julia"
+run = "julia run.jl"
