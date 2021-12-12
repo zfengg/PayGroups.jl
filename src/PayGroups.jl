@@ -1464,4 +1464,15 @@ function igroupay(shouldCheck = false)
     return payGrp
 end
 
+# -------------------------------- create app -------------------------------- #
+function julia_main()::Cint
+    try
+        igroupay()
+    catch
+        Base.invokelatest(Base.display_error, Base.catch_stack())
+        return 1
+    end
+    return 0
+end
+
 end # module
