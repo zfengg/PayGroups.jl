@@ -750,7 +750,7 @@ function add_member!(g::PayGroup)
     while true
         membersTmp = readline()
         append!(addMembers, split(membersTmp))
-
+        unique!(addMembers)
         println()
         println("The following ", colorstring("$(length(addMembers))", :tip), " members will be added:")
         for m in addMembers
