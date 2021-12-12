@@ -25,9 +25,7 @@ julia> ] add PayGroups
 After installation, the easiest way to use `PayGroups`:
 ```julia
 julia> using PayGroups
-julia> igroupay() # interactive
-# or
-julia> g = igroupay() # return a PayGroup as g
+julia> igroupay() # interactive & return a PayGroup
 ```
 
 ### Online by [Repl.it](https://replit.com/@zfengg/groupay)
