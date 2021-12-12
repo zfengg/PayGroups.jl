@@ -16,18 +16,15 @@ It solves the frequent but annoying payment issues in our life, especially after
 ## Install
 
 ### Locally with [Julia](https://julialang.org/downloads/)
-
-Clone this repo or download [groupay.jl](groupay.jl)
-
 ```julia
 julia> ] add PayGroups
 ```
-After installation, the easiest way to use `PayGroups`:
+Quick start:
 ```julia
 julia> using PayGroups
 julia> igroupay() # interactive & return a PayGroup
 ```
 
-### Online by [Repl.it](https://replit.com/@zfengg/PayGroupsjl)
+### Online via [Repl.it](https://replit.com/@zfengg/PayGroupsjl)
 
 https://user-images.githubusercontent.com/42152221/127734458-e71469d5-460f-4622-a779-f35235a76e64.mov
