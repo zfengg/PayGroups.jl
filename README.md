@@ -13,16 +13,21 @@ It solves the frequent but annoying payment issues in our life, especially after
 
 > Try it out @ [Repl.it](https://replit.com/@zfengg/PayGroupsjl). It's fun!
 
-## Install
-
-### Locally with [Julia](https://julialang.org/downloads/)
+## Usage
+### Install with [Julia](https://julialang.org/downloads/)'s built-in package manager
 ```julia
 julia> ] add PayGroups
 ```
-Quick start:
+and quick start with
 ```julia
 julia> using PayGroups
 julia> igroupay() # interactive & return a PayGroup
+```
+
+### Clone this repo and run with julia
+```bash
+git clone https://github.com/zfengg/PayGroups.jl.git
+julia PayGroups.jl/run.jl
 ```
 
 ### Online via [Repl.it](https://replit.com/@zfengg/PayGroupsjl)
