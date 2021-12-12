@@ -1,2 +1,2 @@
-language = "julia"
+# language = "julia"
 run = "opt/julia-1.7.0/bin/julia run.jl"
